@@ -37,7 +37,7 @@ coldict = pd.Series({
         "Mile Time":None, #sheet formula
         "Gain (ft)":'Total Ascent',
         "Grade":None, #sheet formula
-        "Temp (F)":"Max Temp",
+        "Temp (F)":None, #garmin temperature recording is not representative of ambient
         "Rel. hum.":None,
         "Heat Index":None,
         "AQI":None,
