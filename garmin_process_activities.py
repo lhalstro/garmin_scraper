@@ -35,26 +35,26 @@ coldict = pd.Series({
         "s":None,         #sheet formula/hidden
         "Time" : None,    #will be assigned to either moving time or elapsed time, depending on activity
         "Mile Time":None, #sheet formula
-        "Location":None,
+        "Gain (ft)":'Total Ascent',
+        "Grade":None, #sheet formula
+        "Temp (F)":"Max Temp",
+        "Rel. hum.":None,
+        "Heat Index":None,
+        "AQI":None,
+        "Avg HR":'Avg HR',
+        "Max HR":'Max HR',
+        "Rating":None,
+        "Fatigue":None,
+        "Shoe":None,
+        "Activity":'Activity Type',
         "Route/Description":'Title',
+        "Location":None,
         "Who with":None,
         "Comments":None,
         "Excuses":None,
         "Injury":None,
-        "Rating":None,
-        "Fatigue":None,
-        "Temp (F)":"Max Temp",
-        "Rel. hum.":None,
-        "Heat Index":None,
-        "Elevation (ft)":'Total Ascent',
-        "Grade":None, #sheet formula
-        "Activity":'Activity Type',
-        "Shoe":None,
         "BLANK1":None,
         "BLANK2":None,
-        "AQI":None,
-        "Avg. Heart Rate":'Avg HR',
-        "Max Heart Rate":'Max HR',
         "Andrew's RunEffort Scale":None,
     })
 
