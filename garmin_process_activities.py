@@ -82,6 +82,10 @@ def main():
     #     elif 'speed' in c.lower():
     #         df[c] *= 1/ft2m * ft2mi
 
+    #RENAME ACTIVITY TYPES
+    activ = {'Hiking':'Hike','Running':'Run','Swimming':'Swim','Cycling':'Bike','Trail Running':'Run','Walking':'Walk'}
+    df['Activity'] = [activ[a] if a in activ else a for a in df['Activity']]
+
 
 
     #GET ACTIVITY START DATE AND TIME
@@ -99,7 +103,7 @@ def main():
     #     #Reduce activity duration time to only hours/minutes/seconds (no days)
     #     df[x] = [str(d).split('days')[-1].replace(" ","") for d in df[x]]
     #Choose Moving or Elapsed Time
-    df['Time'] = [r['moving_time'] if r['Activity'] in ['Hike', 'Ride'] else r['elapsed_time'] for i,r in df.iterrows()]
+    df['Time'] = [r['moving_time'] if r['Activity'] in ['Hike', 'Bike'] else r['elapsed_time'] for i,r in df.iterrows()]
 
 
     #EXPORT
