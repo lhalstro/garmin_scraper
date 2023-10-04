@@ -133,7 +133,7 @@ def main():
         expt = expt[~expt['Activity'].str.contains(dont)]
 
     #save exact columns of google spreadsheet to file
-    expt[list(coldict.index.values)].sort_values('Date').to_csv('export/log.csv', index=False)
+    expt[list(coldict.index.values)].sort_values(['Date', 'Start']).to_csv('export/log.csv', index=False)
 
 
 
